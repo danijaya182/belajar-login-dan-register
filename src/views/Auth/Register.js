@@ -72,7 +72,8 @@ class Register extends React.Component {
           }
           })
           .catch((err) => {
-             throw Error(err)
+            alert(err)
+            //throw Error(err)
           })
 
         }
