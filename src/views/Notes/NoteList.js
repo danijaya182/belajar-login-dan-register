@@ -13,8 +13,8 @@ class NoteList extends React.Component {
                             </p>
                             {this.props.isAuthenticated ?
                                 <div>
-                                    <Link to={"/view/ + note.id"}>View</Link><span />
-                                    <Link to={"/edit/ + note.id"}>Edit</Link><span />
+                                    <Link to={"/view/" + note.id}>View</Link><span />
+                                    <Link to={"/edit/" + note.id}>Edit</Link><span />
                                     <button onClick={() => this.props.onDelete(note.id)}>Delete</button>
                                 </div>
                                 :
